@@ -5,13 +5,13 @@
 
 pkgname=libunique3
 pkgver=3.0.2
-pkgrel=10
+pkgrel=11
 pkgdesc='Library for writing single instance applications for GTK3'
 arch=('i686' 'x86_64')
 url='https://wiki.gnome.org/Attic/LibUnique'
 license=('LGPL')
 depends=('gtk3')
-makedepends=('gtk-doc' 'gobject-introspection')
+makedepends=('gtk-doc' 'gobject-introspection' 'glib2' 'glib2-devel')
 makepkgopt=('strip' 'docs' '!libtool' '!staticlibs' 'emptydirs' 'zipman' 'purge' '!upx' '!debug')
 provides=('libunique3')
 conflicts=('libunique3')
